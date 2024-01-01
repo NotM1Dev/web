@@ -1,11 +1,11 @@
 import { Button } from '@/components/ui/button';
 import { BsGithub } from 'react-icons/bs';
 
-type IconProps = {
+type GitHubIconProps = {
   url: string;
 };
 
-const GitHubIcon = (props: IconProps) => {
+const GitHubIcon = (props: GitHubIconProps) => {
   return (
     <div>
       <Button variant="link">

@@ -1,11 +1,11 @@
 import { Button } from '@/components/ui/button';
 import { BsYoutube } from 'react-icons/bs';
 
-type IconProps = {
+type YouTubeIconProps = {
   url: string;
 };
 
-const YouTubeIcon = (props: IconProps) => {
+const YouTubeIcon = (props: YouTubeIconProps) => {
   return (
     <div>
       <Button variant="link">

@@ -2,14 +2,27 @@ import { Button } from '@/components/ui/button';
 import { BsDiscord } from 'react-icons/bs';
 import { toast } from 'sonner';
 
-type IconProps = {
+type DiscordIconProps = {
   username: string;
+  loading?: string;
+  success?: string;
+  error?: string;
 };
 
-const DiscordIcon = (props: IconProps) => {
+const DiscordIcon = (props: DiscordIconProps) => {
+  const {
+    username,
+    loading = 'Copying to clipboard...',
+    success = 'Copied Discord username!',
+    error = 'Failed to copy Discord username.'
+  } = props;
+
   const onClick = () => {
-    navigator.clipboard.writeText(props.username);
-    toast('Copied Discord username to clipboard.', { description: props.username });
+    toast.promise(navigator.clipboard.writeText(username), {
+      loading,
+      success,
+      error
+    });
   };
 
   return (
