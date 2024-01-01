@@ -5,7 +5,7 @@ import DiscordIcon from '@/components/icons/DiscordIcon';
 import YouTubeIcon from '@/components/icons/YouTubeIcon';
 import GitHubIcon from '@/components/icons/GitHubIcon';
 
-export default function App() {
+const App = () => {
   return (
     <div
       key="1"
@@ -63,11 +63,13 @@ export default function App() {
           </CardDescription>
           <div className="flex items-center space-x-2 mt-2">
             <YouTubeIcon url="https://youtube.com/@m1dev" />
-            <DiscordIcon url="https://discord.com/users/997191161699631104" />
+            <DiscordIcon username="m1.tsx" />
             <GitHubIcon url="https://github.com/m1-dev" />
           </div>
         </CardContent>
       </Card>
     </div>
   );
-}
+};
+
+export default App;

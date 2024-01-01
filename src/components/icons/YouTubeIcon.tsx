@@ -5,14 +5,16 @@ type IconProps = {
   url: string;
 };
 
-export default function YouTubeIcon(props: IconProps) {
+const YouTubeIcon = (props: IconProps) => {
   return (
     <div>
-      <Button asChild variant="link">
+      <Button variant="link">
         <a href={props.url} target="_blank" rel="noopener noreferrer">
           <BsYoutube className="w-8 h-8" />
         </a>
       </Button>
     </div>
   );
-}
+};
+
+export default YouTubeIcon;

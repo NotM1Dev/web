@@ -1,18 +1,24 @@
 import { Button } from '@/components/ui/button';
 import { BsDiscord } from 'react-icons/bs';
+import { toast } from 'sonner';
 
 type IconProps = {
-  url: string;
+  username: string;
 };
 
-export default function DiscordIcon(props: IconProps) {
+const DiscordIcon = (props: IconProps) => {
+  const onClick = () => {
+    navigator.clipboard.writeText(props.username);
+    toast('Copied Discord username to clipboard.', { description: props.username });
+  };
+
   return (
     <div>
-      <Button asChild variant="link">
-        <a href={props.url} target="_blank" rel="noopener noreferrer">
-          <BsDiscord className="w-8 h-8" />
-        </a>
+      <Button onClick={onClick} variant="link">
+        <BsDiscord className="w-8 h-8" />
       </Button>
     </div>
   );
-}
+};
+
+export default DiscordIcon;

@@ -1,5 +1,5 @@
 node_modules
 dist
 
-components/ui
+src/components/ui
 pnpm-lock.yaml

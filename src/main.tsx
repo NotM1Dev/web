@@ -1,14 +1,17 @@
+import './index.css';
+import '@fontsource/inter/400.css';
+
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
+import App from './App.tsx';
 
 import { ThemeProvider } from '@/components/themes/ThemeProvider.tsx';
-
-import App from './App.tsx';
+import { Toaster } from 'sonner';
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
     <ThemeProvider defaultTheme="system" storageKey="m1-web-theme">
+      <Toaster />
       <App />
     </ThemeProvider>
   </React.StrictMode>
