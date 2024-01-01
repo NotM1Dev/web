@@ -1,9 +1,7 @@
 import { AvatarImage, AvatarFallback, Avatar } from '@/components/ui/avatar';
 import { CardTitle, CardDescription, CardContent, Card } from '@/components/ui/card';
 
-import DiscordIcon from '@/components/icons/DiscordIcon';
-import YouTubeIcon from '@/components/icons/YouTubeIcon';
-import GitHubIcon from '@/components/icons/GitHubIcon';
+import Links from '@/components/main/Links';
 
 const App = () => {
   return (
@@ -36,36 +34,16 @@ const App = () => {
           bg-transparent
         "
       >
-        <Avatar
-          className="
-            h-36
-            w-36
-            border
-            border-neutral-900
-            mb-4
-            md:mb-0
-          "
-        >
+        <Avatar className="h-36 w-36 border border-neutral-900 mb-4 md:mb-0">
           <AvatarImage src="https://github.com/m1-dev.png" />
           <AvatarFallback>M1</AvatarFallback>
         </Avatar>
         <CardContent>
           <CardTitle className="text-3xl font-bold">M1</CardTitle>
-          <CardDescription
-            className="
-            text-gray-500
-            dark:text-gray-400
-              mt-2
-              text-lg
-            "
-          >
+          <CardDescription className="text-gray-500 dark:text-gray-400 mt-2 text-lg">
             Average TypeScript Enjoyer
           </CardDescription>
-          <div className="flex items-center space-x-2 mt-2">
-            <YouTubeIcon url="https://youtube.com/@m1dev" />
-            <DiscordIcon username="m1.tsx" />
-            <GitHubIcon url="https://github.com/m1-dev" />
-          </div>
+          <Links />
         </CardContent>
       </Card>
     </div>
