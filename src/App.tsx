@@ -62,9 +62,6 @@ export default function App() {
             Average TypeScript Enjoyer
           </CardDescription>
           <div className="flex items-center space-x-2 mt-2">
-            {/* <div />
-            <div />
-            <div /> */}
             <YouTubeIcon url="https://youtube.com/@m1dev" />
             <DiscordIcon url="https://discord.com/users/997191161699631104" />
             <GitHubIcon url="https://github.com/m1-dev" />
