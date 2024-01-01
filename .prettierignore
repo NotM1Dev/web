@@ -1,0 +1,5 @@
+node_modules
+dist
+
+components/ui
+pnpm-lock.yaml
