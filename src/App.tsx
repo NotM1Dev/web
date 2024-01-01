@@ -9,7 +9,7 @@ const App = () => {
       key="1"
       className="
         bg-white
-        text-blacm
+        text-black
         dark:bg-black
         dark:text-white
         min-h-screen
