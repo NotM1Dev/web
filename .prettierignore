@@ -1,0 +1,11 @@
+# dependencies
+node_modules
+
+# shadcn/ui components
+components/ui
+
+# next.js output
+.next
+
+# lockfile
+pnpm-lock.yaml
