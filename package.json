@@ -3,8 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
+    "dev": "next dev --turbo",
+    "build": "next build --experimental-turbo",
     "start": "next start",
     "format": "prettier . --write --ignore-path=.prettierignore",
     "lint": "prettier . --check --ignore-path=.prettierignore"
