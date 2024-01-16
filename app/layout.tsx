@@ -5,6 +5,7 @@ import './globals.css';
 
 import { Inter } from 'next/font/google';
 import { ThemeProvider } from '@/components/themes/ThemeProvider';
+import { Toaster } from 'sonner';
 import { cn } from '@/lib/utils';
 
 const font = Inter({ subsets: ['latin'] });
@@ -19,6 +20,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en">
       <body className={cn('bg-white dark:bg-black', font.className)}>
         <ThemeProvider defaultTheme="system" attribute="class" enableSystem>
+          <Toaster />
           {children}
         </ThemeProvider>
       </body>
