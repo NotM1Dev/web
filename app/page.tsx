@@ -3,6 +3,8 @@ import { CardTitle, CardDescription, CardContent, Card } from '@/components/ui/c
 
 import Links from '@/components/main/Links';
 
+export const runtime = 'edge';
+
 const App = () => {
   return (
     <div
