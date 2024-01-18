@@ -43,7 +43,7 @@ const App = () => {
         <CardContent>
           <CardTitle className="text-3xl font-bold">M1</CardTitle>
           <CardDescription className="text-gray-500 dark:text-gray-400 mt-2 text-lg">
-            Average TypeScript Enjoyer
+            Self-taught developer.
           </CardDescription>
           <Links />
         </CardContent>
