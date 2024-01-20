@@ -22,7 +22,7 @@
     ],
     "prettier": {
         "tabWidth": 4,
-        "printWidth": 90,
+        "printWidth": 80,
         "jsxSingleQuote": false,
         "singleQuote": true,
         "trailingComma": "none",
