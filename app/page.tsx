@@ -49,7 +49,10 @@ const App = () => (
                     md:mb-0
                 "
             >
-                <AvatarImage src="https://github.com/m1-dev.png" />
+                <AvatarImage
+                    alt="M1 Profile Picture"
+                    src="https://github.com/m1-dev.png"
+                />
                 <AvatarFallback>M1</AvatarFallback>
             </Avatar>
             <CardContent>
