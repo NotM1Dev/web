@@ -15,11 +15,19 @@ export const metadata: Metadata = {
     description: 'Made by M1 with Next.js, shadcn/ui, and Tailwind CSS.'
 };
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({
+    children
+}: {
+    children: React.ReactNode;
+}) {
     return (
         <html lang="en">
             <body className={cn('bg-white dark:bg-black', font.className)}>
-                <ThemeProvider defaultTheme="system" attribute="class" enableSystem>
+                <ThemeProvider
+                    defaultTheme="system"
+                    attribute="class"
+                    enableSystem
+                >
                     {children}
                     <Toaster />
                     <SpeedInsights />
