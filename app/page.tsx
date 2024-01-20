@@ -9,11 +9,10 @@ import {
 
 export const runtime = 'edge';
 
-const App = () => {
-    return (
-        <div
-            key="1"
-            className="
+const App = () => (
+    <div
+        key="1"
+        className="
                 bg-white
                 text-black
                 dark:bg-black
@@ -25,9 +24,9 @@ const App = () => {
                 items-center
                 justify-center
             "
-        >
-            <Card
-                className="
+    >
+        <Card
+            className="
                     flex
                     flex-col
                     md:flex-row
@@ -39,9 +38,9 @@ const App = () => {
                     border-0
                     bg-transparent
                 "
-            >
-                <Avatar
-                    className="
+        >
+            <Avatar
+                className="
                         h-36
                         w-36
                         border
@@ -49,27 +48,26 @@ const App = () => {
                         mb-4
                         md:mb-0
                     "
-                >
-                    <AvatarImage src="https://github.com/m1-dev.png" />
-                    <AvatarFallback>M1</AvatarFallback>
-                </Avatar>
-                <CardContent>
-                    <CardTitle className="text-3xl font-bold">M1</CardTitle>
-                    <CardDescription
-                        className="
+            >
+                <AvatarImage src="https://github.com/m1-dev.png" />
+                <AvatarFallback>M1</AvatarFallback>
+            </Avatar>
+            <CardContent>
+                <CardTitle className="text-3xl font-bold">M1</CardTitle>
+                <CardDescription
+                    className="
                             text-gray-500
                             dark:text-gray-400
                             mt-2
                             text-lg
                         "
-                    >
-                        Self-taught developer.
-                    </CardDescription>
-                    <Links />
-                </CardContent>
-            </Card>
-        </div>
-    );
-};
+                >
+                    Self-taught developer.
+                </CardDescription>
+                <Links />
+            </CardContent>
+        </Card>
+    </div>
+);
 
 export default App;
