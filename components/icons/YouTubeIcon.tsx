@@ -10,7 +10,10 @@ export interface YouTubeIconProps {
 const YouTubeIcon = (props: YouTubeIconProps) => {
     return (
         <div>
-            <Button variant="link">
+            <label htmlFor="youtube-button" className="sr-only">
+                YouTube Channel
+            </label>
+            <Button id="youtube-button" variant="link">
                 <a href={props.url} target="_blank" rel="noopener noreferrer">
                     <BsYoutube className="w-8 h-8" />
                 </a>

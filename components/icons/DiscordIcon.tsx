@@ -29,7 +29,10 @@ const DiscordIcon = (props: DiscordIconProps) => {
 
     return (
         <div>
-            <Button onClick={onClick} variant="link">
+            <label htmlFor="discord-button" className="sr-only">
+                Discord Username
+            </label>
+            <Button id="discord-button" onClick={onClick} variant="link">
                 <BsDiscord className="w-8 h-8" />
             </Button>
         </div>

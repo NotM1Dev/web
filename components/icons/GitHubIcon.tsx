@@ -10,7 +10,10 @@ export interface GitHubIconProps {
 const GitHubIcon = (props: GitHubIconProps) => {
     return (
         <div>
-            <Button variant="link">
+            <label htmlFor="github-url" className="sr-only">
+                GitHub Profile URL
+            </label>
+            <Button id="github-url" variant="link">
                 <a href={props.url} target="_blank" rel="noopener noreferrer">
                     <BsGithub className="w-8 h-8" />
                 </a>
