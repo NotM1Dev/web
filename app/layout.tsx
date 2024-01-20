@@ -30,9 +30,9 @@ export default function RootLayout({ children }: RootLayoutProps) {
                 >
                     {children}
                     <Toaster />
-                    <SpeedInsights />
-                    <Analytics />
                 </ThemeProvider>
+                <SpeedInsights />
+                <Analytics />
             </body>
         </html>
     );
