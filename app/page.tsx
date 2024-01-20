@@ -1,12 +1,11 @@
+import Links from '@/components/main/Links';
+import { AvatarImage, AvatarFallback, Avatar } from '@/components/ui/avatar';
 import {
     CardTitle,
     CardDescription,
     CardContent,
     Card
 } from '@/components/ui/card';
-
-import { AvatarImage, AvatarFallback, Avatar } from '@/components/ui/avatar';
-import Links from '@/components/main/Links';
 
 export const runtime = 'edge';
 
