@@ -1,14 +1,12 @@
 import type { Metadata } from 'next';
 import './globals.css';
 
-import { Inter } from 'next/font/google';
+import { GeistSans } from 'geist/font/sans';
 import { ThemeProvider } from '@/components/themes/ThemeProvider';
 import { Toaster } from 'sonner';
 import { SpeedInsights } from '@vercel/speed-insights/next';
 import { Analytics } from '@vercel/analytics/react';
 import { cn } from '@/lib/utils';
-
-const font = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
     title: 'M1',
@@ -22,7 +20,7 @@ interface RootLayoutProps {
 export default function RootLayout({ children }: RootLayoutProps) {
     return (
         <html lang="en">
-            <body className={cn('bg-white dark:bg-black', font.className)}>
+            <body className={cn('bg-white dark:bg-black', GeistSans.className)}>
                 <ThemeProvider
                     defaultTheme="system"
                     attribute="class"
