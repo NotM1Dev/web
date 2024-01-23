@@ -7,7 +7,7 @@
         "build": "next build",
         "start": "next start",
         "format": "prettier . --write --ignore-path=.prettierignore",
-        "lint": "prettier . --check --ignore-path=.prettierignore"
+        "lint": "tsc --noEmit; prettier . --check --ignore-path=.prettierignore"
     },
     "repository": "https://github.com/m1-dev/web",
     "homepage": "https://m1-dev.vercel.app",
