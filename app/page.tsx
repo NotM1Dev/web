@@ -65,7 +65,7 @@ const App = () => (
                         text-lg
                     "
                 >
-                    Self-taught developer.
+                    self-taught developer.
                 </CardDescription>
                 <Links />
             </CardContent>
