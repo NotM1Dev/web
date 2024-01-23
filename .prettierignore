@@ -9,3 +9,10 @@ components/ui
 
 # lockfile
 pnpm-lock.yaml
+
+# logging
+**/logs
+**/*.log*
+
+# misc
+**/*.DS_Store
