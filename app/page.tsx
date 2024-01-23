@@ -50,16 +50,17 @@ const App = () => (
                     border-neutral-900
                     mb-4
                     md:mb-0
+                    mx-auto
                 "
             >
                 <AvatarImage
-                    alt="M1 Profile Picture"
+                    alt="Profile Picture"
                     src="https://github.com/m1-dev.png"
                 />
                 <AvatarFallback>M1</AvatarFallback>
             </Avatar>
-            <CardContent>
-                <CardTitle className="text-3xl font-bold">M1</CardTitle>
+            <CardContent className="text-center md:text-left">
+                <CardTitle className="text-3xl font-bold">M1 Dev</CardTitle>
                 <CardDescription
                     className="
                         text-gray-500
