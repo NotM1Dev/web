@@ -72,7 +72,7 @@ const App = () => (
                 </CardDescription>
                 <div className="flex items-center space-x-2 mt-2">
                     <YouTubeIcon url="https://youtube.com/@m1dev" />
-                    <DiscordIcon username="m1.tsx" />
+                    <DiscordIcon username="m1.dev" />
                     <GitHubIcon url="https://github.com/m1-dev" />
                 </div>
             </CardContent>
