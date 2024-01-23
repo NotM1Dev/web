@@ -1,6 +1,4 @@
-// @ts-check
-
-const withBundleAnalyzer = require('next-bundle-analyzer').default({
+const withBundleAnalyzer = require('next-bundle-analyzer')({
     enabled: process.env.ANALYZE == 'true'
 });
 
