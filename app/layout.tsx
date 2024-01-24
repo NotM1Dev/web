@@ -13,6 +13,8 @@ export const metadata: Metadata = {
     description: 'Made by M1 with Next.js, shadcn/ui, and Tailwind CSS.'
 };
 
+export const runtime = 'edge';
+
 interface RootLayoutProps {
     children: React.ReactNode;
 }
