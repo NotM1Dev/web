@@ -10,8 +10,6 @@ import YouTubeIcon from '@/components/icons/YouTubeIcon';
 import DiscordIcon from '@/components/icons/DiscordIcon';
 import GitHubIcon from '@/components/icons/GitHubIcon';
 
-export const runtime = 'edge';
-
 const App = () => (
     <div
         key="1"
