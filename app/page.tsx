@@ -53,7 +53,7 @@ const App = () => (
             >
                 <AvatarImage
                     alt="Profile Picture"
-                    src="https://github.com/m1-dev.png"
+                    src="https://github.com/NotM1Dev.png"
                 />
                 <AvatarFallback>M1</AvatarFallback>
             </Avatar>
@@ -72,7 +72,7 @@ const App = () => (
                 <div className="flex items-center space-x-2 mt-2">
                     <YouTubeIcon url="https://youtube.com/@m1dev" />
                     <DiscordIcon username="m1_dev" />
-                    <GitHubIcon url="https://github.com/m1-dev" />
+                    <GitHubIcon url="https://github.com/NotM1Dev" />
                 </div>
             </CardContent>
         </Card>
